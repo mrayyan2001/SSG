@@ -1,14 +1,19 @@
 site_name: My Docs
 nav:
   - Home: index.md
-  - Roadmap Details:
-      - Power BI: power_bi.md
-      - Data Science: data_science.md
-      - Frontend: frontend.md
-      - Fluter: flutter.md
-      - QA: qa.md
+  - Roadmap:
+      - Power BI: ./roadmap/power_bi.md
+      - Data Science: ./roadmap/data_science.md
+      - Frontend: ./roadmap/frontend.md
+      - Fluter: ./roadmap/flutter.md
+      - QA: ./roadmap/qa.md
+      - Laravel: ./roadmap/laravel.md
   - Interview Questions:
-      - test: test.md
+      - Data Science: ./interview_question/data_science.md
+      - Gaming: ./interview_question/gaming.md
+      - .Net: ./interview_question/dot_net.md
+      - QA: ./interview_question/qa.md
+
 extra_css:
   - css/rtl.css
 theme:
