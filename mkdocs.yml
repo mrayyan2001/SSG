@@ -2,13 +2,15 @@ site_name: My Docs
 nav:
   - Home: index.md
   - Roadmap:
-      - Data Science: ./roadmap/data_science.md
-      - QA: ./roadmap/qa.md
-      - Frontend: ./roadmap/frontend.md
-      - Power BI: ./roadmap/power_bi.md
-      - Fluter: ./roadmap/flutter.md
-      - Laravel: ./roadmap/laravel.md
-      - Gaming: ./roadmap/gaming.md
+      - Test: ./roadmap/test.md
+  - Roadmap Content:
+      - Data Science: ./roadmap_content/data_science.md
+      - QA: ./roadmap_content/qa.md
+      - Frontend: ./roadmap_content/frontend.md
+      - Power BI: ./roadmap_content/power_bi.md
+      - Fluter: ./roadmap_content/flutter.md
+      - Laravel: ./roadmap_content/laravel.md
+      - Gaming: ./roadmap_content/gaming.md
   - Interview Questions:
       - Data Science: ./interview_question/data_science.md
       - QA: ./interview_question/qa.md
@@ -16,6 +18,7 @@ nav:
       - Gaming: ./interview_question/gaming.md
       - .Net: ./interview_question/dot_net.md
       - API: ./interview_question/api_documentation.md
+      - SQL: ./interview_question/sql.md
 
 extra_css:
   - css/rtl.css
