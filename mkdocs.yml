@@ -1,7 +1,7 @@
 site_name: My Docs
 nav:
   - Home: index.md
-  - Roadmap:
+  - Roadmap Details:
       - Power BI: power_bi.md
       - Data Science: data_science.md
       - Frontend: frontend.md

@@ -52,36 +52,50 @@ ISTQB CTFL (اختصار لـ International Software Testing Qualifications Boar
 
 ## المستوى 2: الاختبار المتقدم والأتمتة (Advanced & Automation QC & QA)
 
-### Performance Testing & Jmeter ( ISTQB -CTFL-Performance Testing Certification)
+### اختبار الأداء باستخدام (JMeter) (ISTQB -CTFL-Performance Testing Certification)
 
-1. Types of Performance Testing
-2. Common Performance Problems
-3. Performance Testing Process
-4. Performance Monitoring
-5. Technical Environment
-6. Build a project on Jmeter tool with full performance test for mobile and web
+**Apache JMeter** هي أداة مفتوحة المصدر تُستخدم لاختبار أداء التطبيقات وقياس كفاءتها تحت مختلف الظروف. تُعتبر JMeter خيارًا مثاليًا لاختبار التطبيقات الشبكية والويب وواجهات برمجة التطبيقات (API) والخدمات الأخرى.
+
+**ISTQB CTFL Performance Testing Certification** هي شهادة احترافية مخصصة لمختبري الأداء الذين يرغبون في فهم مفاهيم واختبارات الأداء بعمق، وتحسين مهاراتهم في تحليل أداء الأنظمة. تركز الشهادة على تقديم معرفة نظرية وعملية تُمكن المحترفين من اختبار أداء التطبيقات وتحديد عنق الزجاجة وتحسين الكفاءة.
+
+1. نواع اختبارات الأداء
+2. مشاكل الأداء الشائعة
+3. عملية اختبار الأداء
+4. مراقبة الأداء
+5. البيئة التقنية
+6. تنفيذ مشروع باستخدام JMeter
 
 ### Mobile Tester (ASTQB Mobile Testing Certification)
 
-1. What is a Mobile Application
-2. Expectations from Mobile Users
-3. Challenges for Testers
-4. Application types
-5. Performance Testing for Mobile Software
-6. Usability Testing for Mobile Software
-7. Security Testing in Mobile Testing
+!**ASTQB Mobile Testing Certification** هي اعتماد عالمي مصمم لمختبري البرمجيات الذين يرغبون في تحسين مهاراتهم في اختبار تطبيقات الهواتف المحمولة. تقدم الشهادة فهمًا عميقًا لمفاهيم، تقنيات، وأدوات اختبار تطبيقات الهواتف المحمولة، مما يساعد المختبرين على ضمان جودة التطبيقات على منصات متعددة.
 
-### Automation API testing
+1. ما هي التطبيقات المحمولة؟
+2. توقعات مستخدمي الهواتف المحمولة
+3. التحديات التي يواجهها مختبرو التطبيقات المحمولة
+4. أنواع التطبيقات المحمولة
+5. اختبار الأداء لتطبيقات الهواتف المحمولة
+6. اختبار قابلية الاستخدام لتطبيقات الهواتف المحمولة
+7. اختبار الأمان لتطبيقات الهواتف المحمولة
 
-1. API Type
-2. What is Postman?
-3. Why Use Postman?
-4. Roles & Responsibilities of a Software tester for testing API’s
-5. Automation Testing using Postman
+### اختبار API الآلي Automation API testing
+
+1. أنواع الـ **API**
+2. ما هو **Postman**
+3. لماذا نستخدم **Postman**
+4. دور واختصاصات مختبر البرمجيات لاختبار الـ API (Roles & Responsibilities of a Software Tester for Testing APIs)
+5. اختبار الأتمتة باستخدام Postman (Automation Testing using Postman)
+
+**API** هو اختصار لـ **Application Programming Interface** (واجهة برمجة التطبيقات). هو مجموعة من القواعد والبروتوكولات التي تسمح لتطبيقات البرمجيات بالتواصل مع بعضها البعض. يحدد **API** كيفية إرسال واستقبال البيانات بين الأنظمة، مما يتيح للتطبيقات المختلفة التفاعل مع بعضهم البعض بطريقة منظمة وموثوقة.
+
+**Postman** هو أداة شائعة تستخدم لاختبار واجهات برمجة التطبيقات (**APIs**) وتطويرها. تتيح للمطورين والمختبرين إرسال واستقبال الطلبات عبر **API،** ومراجعة الاستجابات، والتحقق من صحة البيانات، وتوثيق الاختبارات. تم تصميم **Postman** لتسهيل عملية اختبار **API**.
 
 ### 4. Selenium WebDriver (ISTQB Test Automation Engineering Certification)
 
-1. Introduction and Objectives for Test Automation
-2. Web element locators for test automation
-3. Build a project using selenium with Java code
-4. Test Automation Reporting and Metrics
+**ISTQB Test Automation Engineering** هي شهادة معترف بها عالميًا تهدف إلى تعليم وتقييم مهارات ومفاهيم أتمتة الاختبارات في مجال اختبار البرمجيات. تركز هذه الشهادة على تمكين المختبرين من تصميم وتنفيذ وصيانة اختبارات الأتمتة بشكل فعال في بيئات تطوير البرمجيات الحديثة.
+
+**Selenium** هو إطار مفتوح المصدر يُستخدم لاختبار التطبيقات عبر الإنترنت (ويب). يتمتع Selenium بشعبية كبيرة في مجال اختبار البرمجيات، خصوصًا لاختبارات الأتمتة الخاصة بالتطبيقات المبنية على الويب. يدعم Selenium العديد من لغات البرمجة مثل Java، Python، C#، Ruby و JavaScript، ويعمل عبر مجموعة متنوعة من المتصفحات مثل Chrome، Firefox، Edge و Safari.
+
+1. مقدمة وأهداف أتمتة الاختبارات
+2. محددات العناصر في الويب لاختبارات الأتمتة
+3. إنشاء مشروع باستخدام Selenium مع كود Java
+4. تقارير أتمتة الاختبارات وقياس الأداء
