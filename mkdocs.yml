@@ -1,0 +1,15 @@
+site_name: My Docs
+nav:
+  - Home: index.md
+  - Roadmap:
+      - Power BI: power_bi.md
+      - Data Science: data_science.md
+      - Frontend: frontend.md
+      - Fluter: flutter.md
+      - QA: qa.md
+extra_css:
+  - css/rtl.css
+theme:
+  name: material
+  palette:
+    primary: custom
