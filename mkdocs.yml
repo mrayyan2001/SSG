@@ -7,6 +7,8 @@ nav:
       - Frontend: frontend.md
       - Fluter: flutter.md
       - QA: qa.md
+  - Interview Questions:
+      - test: test.md
 extra_css:
   - css/rtl.css
 theme:
