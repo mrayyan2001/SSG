@@ -8,6 +8,7 @@ nav:
       - Fluter: ./roadmap/flutter.md
       - QA: ./roadmap/qa.md
       - Laravel: ./roadmap/laravel.md
+      - Gaming: ./roadmap/gaming.md
   - Interview Questions:
       - Data Science: ./interview_question/data_science.md
       - Gaming: ./interview_question/gaming.md
