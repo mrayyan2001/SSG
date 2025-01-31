@@ -1,0 +1,2739 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../frontend/">
+      
+      
+        <link rel="next" href="../power_bi/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+    
+    
+      
+        <title>.Net - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/rtl.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#roadmap-net" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              .Net
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Roadmap Content
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Roadmap Content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_science/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Science
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    .Net
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    .Net
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. C
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. C">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Data Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Conditional Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Loops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-exception-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Exception Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Collections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-linq" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LINQ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. LINQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Ordering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-extract-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Extract Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-extract-one-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Extract One Element
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Aggregation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Pagination
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-oop-object-oriented-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. OOP (Object-Oriented Programming)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. OOP (Object-Oriented Programming)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Classes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Objects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-inheritance" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Inheritance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-polymorphism" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Polymorphism
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Abstraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-encapsulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Encapsulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Constructors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-method-overloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Method Overloading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-method-overriding" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Method Overriding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. SQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. SQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      - SELECT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      - INSERT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      - UPDATE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      - DELETE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      - WHERE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-group-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      - GROUP BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-having" class="md-nav__link">
+    <span class="md-ellipsis">
+      - HAVING
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      - JOIN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-subqueries" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Subqueries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-aggregation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Aggregation Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. REST
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. REST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-http-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      - HTTP Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Status Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-api-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      - API Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-request-response-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Request &amp; Response Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-url-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      - URL Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-restful-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      - RESTful Routes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Middleware
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Middleware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-request-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Request Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-authentication-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Authentication Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-authorization-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Authorization Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-logging-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Logging Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-exception-handling-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Exception Handling Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-cors-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - CORS Middleware
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mvc-model-view-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. MVC (Model-View-Controller)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. MVC (Model-View-Controller)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Views
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Controllers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Routing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-actions-action-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Actions &amp; Action Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-viewdata-viewbag" class="md-nav__link">
+    <span class="md-ellipsis">
+      - ViewData &amp; ViewBag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-partial-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Partial Views
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Layouts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-form-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Form Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-orm-object-relational-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ORM (Object-Relational Mapping)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. ORM (Object-Relational Mapping)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-entity-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Entity Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-dbcontext" class="md-nav__link">
+    <span class="md-ellipsis">
+      - DbContext
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-migrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Migrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-linq-to-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      - LINQ to Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lazy-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Lazy Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-eager-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Eager Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-explicit-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Explicit Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-crud-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      - CRUD Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-razor" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Razor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Razor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-razor-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Razor Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-razor-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Razor Views
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-razor-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Razor Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-viewcomponents" class="md-nav__link">
+    <span class="md-ellipsis">
+      - ViewComponents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-layouts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Layouts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power_bi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power BI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flutter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fluter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../laravel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Laravel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gaming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Interview Questions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Interview Questions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/data_science/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Science
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/qa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/frontend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/gaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gaming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/dot_net/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    .Net
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/api_documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interview_question/sql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Posts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Posts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../posts/front-end/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../posts/git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GIT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../posts/oop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. C
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. C">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Data Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Conditional Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Loops
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-exception-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Exception Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Collections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-linq" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LINQ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. LINQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Ordering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-extract-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Extract Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-extract-one-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Extract One Element
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Aggregation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Pagination
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-oop-object-oriented-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. OOP (Object-Oriented Programming)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. OOP (Object-Oriented Programming)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Classes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Objects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-inheritance" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Inheritance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-polymorphism" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Polymorphism
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Abstraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-encapsulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Encapsulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Constructors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-method-overloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Method Overloading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-method-overriding" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Method Overriding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. SQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. SQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      - SELECT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      - INSERT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      - UPDATE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      - DELETE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      - WHERE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-group-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      - GROUP BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-having" class="md-nav__link">
+    <span class="md-ellipsis">
+      - HAVING
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      - JOIN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-subqueries" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Subqueries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-aggregation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Aggregation Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. REST
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. REST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-http-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      - HTTP Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Status Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-api-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      - API Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-request-response-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Request &amp; Response Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-url-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      - URL Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-restful-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      - RESTful Routes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Middleware
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Middleware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-request-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Request Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-authentication-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Authentication Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-authorization-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Authorization Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-logging-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Logging Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-exception-handling-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Exception Handling Middleware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-cors-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      - CORS Middleware
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mvc-model-view-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. MVC (Model-View-Controller)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. MVC (Model-View-Controller)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Views
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Controllers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Routing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-actions-action-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Actions &amp; Action Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-viewdata-viewbag" class="md-nav__link">
+    <span class="md-ellipsis">
+      - ViewData &amp; ViewBag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-partial-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Partial Views
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Layouts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-form-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Form Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-orm-object-relational-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ORM (Object-Relational Mapping)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. ORM (Object-Relational Mapping)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-entity-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Entity Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-dbcontext" class="md-nav__link">
+    <span class="md-ellipsis">
+      - DbContext
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-migrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Migrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-linq-to-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      - LINQ to Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-lazy-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Lazy Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-eager-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Eager Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-explicit-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Explicit Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-crud-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      - CRUD Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-razor" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Razor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Razor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-razor-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Razor Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-razor-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Razor Views
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-razor-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Razor Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-viewcomponents" class="md-nav__link">
+    <span class="md-ellipsis">
+      - ViewComponents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-layouts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Layouts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="roadmap-net">Roadmap لتعلم .NET</h1>
+<h2 id="1-c">1. C</h2>
+<h3 id="-variables">- Variables</h3>
+<ul>
+<li>المتغيرات هي أماكن في الذاكرة لتخزين البيانات. مثلًا، لتخزين رقم نستخدم متغير من نوع int.</li>
+</ul>
+<h3 id="-data-types">- Data Types</h3>
+<ul>
+<li>int: لتخزين الأعداد الصحيحة مثل 5، 100.</li>
+<li>float: لتخزين الأعداد العشرية مثل 3.14.</li>
+<li>decimal: مثل الـ float لكنه أدق للأرقام الكبيرة.</li>
+<li>double: مشابه لـ float ولكن أكثر دقة.</li>
+<li>string: لتخزين النصوص مثل "Hello".</li>
+<li>char: لتخزين حرف واحد مثل 'A'.</li>
+<li>bool: لتخزين القيم المنطقية (صح أو خطأ).</li>
+</ul>
+<h3 id="-conditional-statements">- Conditional Statements</h3>
+<ul>
+<li>if: نستخدمه إذا أردنا تنفيذ كود فقط إذا تحقق شرط معين.</li>
+<li>switch: بديل لـ if عندما نريد التحقق من العديد من الخيارات.</li>
+</ul>
+<h3 id="-loops">- Loops</h3>
+<ul>
+<li>for: نستخدمه إذا أردنا تكرار شيء عدد معين من المرات.</li>
+<li>while: نستخدمه لتكرار شيء طالما كان الشرط صحيحًا.</li>
+<li>foreach: نستخدمه للتكرار عبر مجموعة من العناصر (مثل قائمة أو مصفوفة).</li>
+</ul>
+<h3 id="-methods">- Methods</h3>
+<ul>
+<li>طريقة (Method) هي مجموعة من الأكواد التي نقوم بإعادة استخدامها في أكثر من مكان.</li>
+</ul>
+<h3 id="-exception-handling">- Exception Handling</h3>
+<ul>
+<li>نستخدمها للتعامل مع الأخطاء التي قد تحدث أثناء تنفيذ البرنامج، مثل try-catch للتأكد من أن الأخطاء لا توقف البرنامج فجأة.</li>
+</ul>
+<h3 id="-collections">- Collections</h3>
+<ul>
+<li>arrays: لتخزين مجموعة ثابتة من البيانات.</li>
+<li>lists: مجموعة ديناميكية يمكن إضافة العناصر إليها أو حذفها.</li>
+<li>dictionaries: لتخزين أزواج (مفتاح: قيمة).</li>
+</ul>
+<h2 id="2-linq">2. LINQ</h2>
+<ul>
+<li>Language Integrated Query: لغة مدمجة للبحث في البيانات مثل التصفية، الترتيب، والمجموعات.</li>
+</ul>
+<h3 id="-filtering">- Filtering</h3>
+<ul>
+<li>Where: تصفية البيانات حسب شروط معينة (مثلًا: العثور على الأشخاص الذين أعمارهم أكبر من 20).</li>
+<li>Distinct: إزالة العناصر المكررة.</li>
+<li>DistinctBy: إزالة العناصر المكررة بناءً على خاصية معينة.</li>
+<li>Take: أخذ عدد معين من العناصر.</li>
+<li>Skip: تجاهل عدد معين من العناصر.</li>
+</ul>
+<h3 id="-ordering">- Ordering</h3>
+<ul>
+<li>OrderBy: ترتيب العناصر تصاعديًا.</li>
+<li>OrderByDescending: ترتيب العناصر تنازليًا.</li>
+<li>ThenBy: ترتيب إضافي بعد الترتيب الأساسي.</li>
+<li>ThenByDescending: ترتيب تنازلي إضافي.</li>
+</ul>
+<h3 id="-selection">- Selection</h3>
+<ul>
+<li>Select: تحديد بيانات معينة من مجموعة.</li>
+<li>SelectMany: تحويل مجموعة من المجموعات إلى مجموعة واحدة.</li>
+</ul>
+<h3 id="-extract-collection">- Extract Collection</h3>
+<ul>
+<li>ToList: تحويل مجموعة إلى قائمة.</li>
+<li>ToArray: تحويل مجموعة إلى مصفوفة.</li>
+</ul>
+<h3 id="-extract-one-element">- Extract One Element</h3>
+<ul>
+<li>First: استخراج أول عنصر من المجموعة.</li>
+<li>Last: استخراج آخر عنصر من المجموعة.</li>
+<li>Single: استخراج عنصر واحد فقط من المجموعة.</li>
+<li>FirstOrDefault: إذا كانت المجموعة فارغة يرجع القيمة الافتراضية.</li>
+<li>LastOrDefault: كما في FirstOrDefault لكن مع آخر عنصر.</li>
+<li>SingleOrDefault: إذا كانت المجموعة فارغة يرجع القيمة الافتراضية.</li>
+</ul>
+<h3 id="-aggregation">- Aggregation</h3>
+<ul>
+<li>Sum: جمع الأرقام.</li>
+<li>Average: حساب المتوسط.</li>
+<li>Max: العثور على أكبر قيمة.</li>
+<li>Min: العثور على أصغر قيمة.</li>
+<li>Count: حساب عدد العناصر.</li>
+</ul>
+<h3 id="-pagination">- Pagination</h3>
+<ul>
+<li>Take: أخذ عدد معين من العناصر.</li>
+<li>Skip: تخطي عدد معين من العناصر.</li>
+</ul>
+<h2 id="3-oop-object-oriented-programming">3. OOP (Object-Oriented Programming)</h2>
+<h3 id="-classes">- Classes</h3>
+<h3 id="-objects">- Objects</h3>
+<h3 id="-inheritance">- Inheritance</h3>
+<h3 id="-polymorphism">- Polymorphism</h3>
+<h3 id="-abstraction">- Abstraction</h3>
+<h3 id="-encapsulation">- Encapsulation</h3>
+<h3 id="-interfaces">- Interfaces</h3>
+<h3 id="-constructors">- Constructors</h3>
+<h3 id="-method-overloading">- Method Overloading</h3>
+<h3 id="-method-overriding">- Method Overriding</h3>
+<h2 id="4-sql">4. SQL</h2>
+<h3 id="-select">- SELECT</h3>
+<ul>
+<li>لاستخراج البيانات من قاعدة البيانات.</li>
+</ul>
+<h3 id="-insert">- INSERT</h3>
+<ul>
+<li>لإضافة بيانات جديدة إلى قاعدة البيانات.</li>
+</ul>
+<h3 id="-update">- UPDATE</h3>
+<ul>
+<li>لتحديث البيانات في قاعدة البيانات.</li>
+</ul>
+<h3 id="-delete">- DELETE</h3>
+<ul>
+<li>لحذف بيانات من قاعدة البيانات.</li>
+</ul>
+<h3 id="-where">- WHERE</h3>
+<ul>
+<li>لتحديد شرط معين لاستخراج أو تحديث أو حذف البيانات.</li>
+</ul>
+<h3 id="-group-by">- GROUP BY</h3>
+<ul>
+<li>لتجميع البيانات بناءً على معايير معينة، مثلًا: تجميع المبيعات حسب المدينة.</li>
+</ul>
+<h3 id="-having">- HAVING</h3>
+<ul>
+<li>لتصفية المجموعات بعد أن يتم تجميع البيانات باستخدام GROUP BY.</li>
+</ul>
+<h3 id="-join">- JOIN</h3>
+<ul>
+<li>INNER JOIN: لدمج الجداول التي تحتوي على قيم متشابهة.</li>
+<li>LEFT JOIN: لدمج الجداول مع الاحتفاظ بكل البيانات من الجدول الأول.</li>
+<li>RIGHT JOIN: لدمج الجداول مع الاحتفاظ بكل البيانات من الجدول الثاني.</li>
+</ul>
+<h3 id="-subqueries">- Subqueries</h3>
+<ul>
+<li>استعلام داخل استعلام آخر للحصول على بيانات أكثر دقة.</li>
+</ul>
+<h3 id="-aggregation-functions">- Aggregation Functions</h3>
+<ul>
+<li>COUNT: لحساب عدد السجلات.</li>
+<li>SUM: لجمع الأرقام.</li>
+<li>AVG: لحساب المتوسط.</li>
+<li>MIN: للحصول على أقل قيمة.</li>
+<li>MAX: للحصول على أكبر قيمة.</li>
+</ul>
+<h2 id="5-rest">5. REST</h2>
+<h3 id="-http-methods">- HTTP Methods</h3>
+<ul>
+<li>GET: للحصول على البيانات.</li>
+<li>POST: لإرسال بيانات جديدة.</li>
+<li>PUT: لتحديث بيانات موجودة.</li>
+<li>DELETE: لحذف بيانات.</li>
+</ul>
+<h3 id="-status-codes">- Status Codes</h3>
+<ul>
+<li>200: الطلب تم بنجاح.</li>
+<li>400: يوجد خطأ في الطلب.</li>
+<li>404: العنصر غير موجود.</li>
+<li>500: خطأ في الخادم.</li>
+</ul>
+<h3 id="-api-authentication">- API Authentication</h3>
+<ul>
+<li>Token: عملية تأكيد الهوية باستخدام رموز خاصة.</li>
+</ul>
+<h3 id="-headers">- Headers</h3>
+<ul>
+<li>Content-Type: نوع البيانات المرسلة أو المستلمة.</li>
+<li>Authorization: بيانات التوثيق مثل الرموز أو المفاتيح.</li>
+</ul>
+<h3 id="-request-response-body">- Request &amp; Response Body</h3>
+<ul>
+<li>الجسم يحتوي على البيانات المرسلة أو المستلمة عبر API.</li>
+</ul>
+<h3 id="-url-parameters">- URL Parameters</h3>
+<ul>
+<li>المعاملات التي تضاف إلى الرابط لتحديد استعلامات معينة.</li>
+</ul>
+<h3 id="-restful-routes">- RESTful Routes</h3>
+<ul>
+<li>CRUD Operations: العمليات الأساسية مثل Create (إنشاء)، Read (قراءة)، Update (تحديث)، Delete (حذف).</li>
+</ul>
+<h2 id="6-middleware">6. Middleware</h2>
+<h3 id="-request-pipeline">- Request Pipeline</h3>
+<ul>
+<li>سلسلة من العمليات التي يتم فيها معالجة الطلبات.</li>
+</ul>
+<h3 id="-authentication-middleware">- Authentication Middleware</h3>
+<ul>
+<li>التحقق من هوية المستخدم قبل السماح له بالوصول.</li>
+</ul>
+<h3 id="-authorization-middleware">- Authorization Middleware</h3>
+<ul>
+<li>التأكد من أن المستخدم لديه صلاحيات الوصول.</li>
+</ul>
+<h3 id="-logging-middleware">- Logging Middleware</h3>
+<ul>
+<li>تسجيل تفاصيل الطلبات والأخطاء.</li>
+</ul>
+<h3 id="-exception-handling-middleware">- Exception Handling Middleware</h3>
+<ul>
+<li>التعامل مع الأخطاء التي قد تحدث أثناء معالجة الطلبات.</li>
+</ul>
+<h3 id="-cors-middleware">- CORS Middleware</h3>
+<ul>
+<li>التعامل مع قيود الوصول عبر النطاقات.</li>
+</ul>
+<h2 id="7-mvc-model-view-controller">7. MVC (Model-View-Controller)</h2>
+<h3 id="-models">- Models</h3>
+<ul>
+<li>تمثل البيانات مثل المستخدمين أو المنتجات.</li>
+</ul>
+<h3 id="-views">- Views</h3>
+<ul>
+<li>الواجهات التي تعرض البيانات للمستخدم.</li>
+</ul>
+<h3 id="-controllers">- Controllers</h3>
+<ul>
+<li>تتحكم في سير البيانات بين النماذج والعروض.</li>
+</ul>
+<h3 id="-routing">- Routing</h3>
+<ul>
+<li>تحديد المسارات التي تقود المستخدم إلى الصفحات المختلفة.</li>
+</ul>
+<h3 id="-actions-action-results">- Actions &amp; Action Results</h3>
+<ul>
+<li>الإجراءات التي تتم عند التعامل مع طلبات المستخدم.</li>
+</ul>
+<h3 id="-viewdata-viewbag">- ViewData &amp; ViewBag</h3>
+<ul>
+<li>نقل البيانات من Controller إلى View.</li>
+</ul>
+<h3 id="-partial-views">- Partial Views</h3>
+<ul>
+<li>عرض أجزاء معينة من واجهة المستخدم بشكل مستقل.</li>
+</ul>
+<h3 id="-layouts">- Layouts</h3>
+<ul>
+<li>تصميم هيكل أساسي للصفحات (مثل الشريط العلوي والتذييل).</li>
+</ul>
+<h3 id="-form-handling">- Form Handling</h3>
+<ul>
+<li>التعامل مع البيانات المدخلة من المستخدم عبر النماذج.</li>
+</ul>
+<h3 id="-validation">- Validation</h3>
+<ul>
+<li>التحقق من صحة البيانات المدخلة من قبل المستخدم.</li>
+</ul>
+<h2 id="8-orm-object-relational-mapping">8. ORM (Object-Relational Mapping)</h2>
+<h3 id="-entity-framework">- Entity Framework</h3>
+<ul>
+<li>هو إطار عمل يساعدك على العمل مع قاعدة البيانات باستخدام الكائنات بدلاً من كتابة استعلامات SQL يدويًا.</li>
+</ul>
+<h3 id="-dbcontext">- DbContext</h3>
+<ul>
+<li>الكائن الذي يمثل الجسر بين الكود والقاعدة البيانات ويحتوي على العمليات الأساسية مثل الاستعلام والتعديل.</li>
+</ul>
+<h3 id="-entities">- Entities</h3>
+<ul>
+<li>الكائنات التي تمثل الجداول في قاعدة البيانات. مثلًا، كائن User قد يمثل جدول المستخدمين في قاعدة البيانات.</li>
+</ul>
+<h3 id="-migrations">- Migrations</h3>
+<ul>
+<li>أداة تُستخدم لإجراء تغييرات على قاعدة البيانات عند تغيير النماذج. مثلًا، إضافة عمود جديد إلى جدول.</li>
+</ul>
+<h3 id="-linq-to-entities">- LINQ to Entities</h3>
+<ul>
+<li>استخدام LINQ للاستعلام عن البيانات في Entity Framework.</li>
+</ul>
+<h3 id="-lazy-loading">- Lazy Loading</h3>
+<ul>
+<li>تحميل البيانات فقط عند الحاجة إليها بدلاً من تحميلها جميعًا دفعة واحدة.</li>
+</ul>
+<h3 id="-eager-loading">- Eager Loading</h3>
+<ul>
+<li>تحميل البيانات المرتبطة مع الكائنات بشكل مسبق.</li>
+</ul>
+<h3 id="-explicit-loading">- Explicit Loading</h3>
+<ul>
+<li>تحميل البيانات المرتبطة فقط عندما يتم الإشارة إليها صراحة.</li>
+</ul>
+<h3 id="-crud-operations">- CRUD Operations</h3>
+<ul>
+<li>العمليات الأساسية لإنشاء، قراءة، تحديث، وحذف البيانات من قاعدة البيانات.</li>
+</ul>
+<h2 id="9-razor">9. Razor</h2>
+<h3 id="-razor-syntax">- Razor Syntax</h3>
+<ul>
+<li>يستخدم لكتابة الكود داخل صفحات HTML مع C# في تطبيقات ASP.NET.</li>
+</ul>
+<h3 id="-razor-views">- Razor Views</h3>
+<ul>
+<li>القوالب التي تستخدم في عرض البيانات من الخوادم إلى المتصفح، تمزج بين HTML وC#.</li>
+</ul>
+<h3 id="-razor-pages">- Razor Pages</h3>
+<ul>
+<li>صفحات تعتمد على Razor ويُستخدم فيها النموذج-العرض-التحكم داخل صفحة واحدة.</li>
+</ul>
+<h3 id="-viewcomponents">- ViewComponents</h3>
+<ul>
+<li>مكونات تُستخدم لإعادة استخدام أجزاء من الواجهة في تطبيقات Razor.</li>
+</ul>
+<h3 id="-layouts_1">- Layouts</h3>
+<ul>
+<li>هيكل أساسي للصفحات يتم تكراره في كل الصفحات لضمان التناسق في التصميم.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5090c770.min.js"></script>
+      
+    
+  </body>
+</html>

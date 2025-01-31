@@ -1,0 +1,104 @@
+@page {
+    size: A4;
+    margin: 0.25in;
+}
+
+
+img {
+    width: 128px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    direction: rtl;
+}
+
+.md-nav__list {
+    padding-right: 18px;
+}
+
+article ul,
+article ol {
+    box-shadow: 0 0 3px 1px rgba(235, 63, 79, 0.5);
+}
+
+.md-typeset ul,
+.md-typeset ol {
+    padding: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Increase font size for headers */
+.md-typeset h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #eb3f4f; */
+    /* color: white; */
+    color: black;
+    margin-bottom: 8px;
+}
+
+.md-typeset h2 {
+    font-size: 1.8rem;
+    /* background-color: #eb3f4f; */
+    /* color: white; */
+    padding: 8px 16px;
+    /* text-align: center; */
+    /* width: 300px; */
+    margin: 0 auto;
+    page-break-before: always;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h3::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #eb3f4f;
+    margin-left: 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p,
+li {
+    font-size: 0.8rem;
+}
+
+article li::before {
+    content: '✔';
+    display: inline-block;
+    margin-left: 10px;
+    color: #eb3f4f;
+    font-size: 1rem;
+}
+
+:root {
+    --md-primary-fg-color: #eb3f4f;
+
+}
