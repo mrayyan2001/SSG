@@ -19,6 +19,10 @@ nav:
       - .Net: ./interview_question/dot_net.md
       - API: ./interview_question/api_documentation.md
       - SQL: ./interview_question/sql.md
+  - Posts:
+      - Frontend: ./posts/front-end.md
+      - GIT: ./posts/git.md
+      - OOP: ./posts/oop.md
 
 extra_css:
   - css/rtl.css
